@@ -1,0 +1,63 @@
+{
+	"description" : "A Modbus connected Flir AX8 infrared camera",
+	"name" : "FlirAX8",
+	"connection" : "ModbusC",
+	"defaults" : {
+		"asset": {
+			"default": "FlirAX8"
+			},
+		"protocol": {
+			"default": "TCP"
+			},
+		"baud": {
+        		"default": "115200"
+			},
+		"parity": {
+        		"default": "even"
+			},
+		"isHyperParam" : {
+			"default" : true
+			},
+		"scaleFactor" : {
+			"default" : 43.21
+			},
+		"bias" : {
+			"default" : 98
+			},
+		"map" : {
+			"default" : {
+				"values" : [
+					{
+						"name" : "delta1",
+						"register" : [5, 6],
+						"type": "float"
+					},
+					{
+						"name" : "delta2",
+						"register" : [7, 8],
+						"type": "float"
+					},
+					{
+						"name" : "delta3",
+						"register" : [9, 10],
+						"type": "float"
+					},
+					{
+						"name" : "delta4",
+						"register" : [11, 12],
+						"type": "float"
+					},
+					{
+						"name" : "max20Valid",
+						"register" : 257
+					},
+					{
+						"name" : "average20Valid",
+						"register" : 258
+					}
+	  				]
+				}
+			}
+		}
+}
+
