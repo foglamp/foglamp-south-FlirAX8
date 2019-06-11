@@ -1,7 +1,7 @@
 {
-	"description" : "A Modbus connected Flir AX8 infrared camera",
+	"description" : "A Modbus connected Flir AX8 thermal imaging camera",
 	"name" : "FlirAX8",
-	"connection" : "modbusC",
+	"connection" : "ModbusC",
 	"defaults" : {
 		"map" : {
 			"default" : {
@@ -377,7 +377,7 @@
 					},
 					{
 						"name" : "max10",
-						"inputRegister" : [1132, 1331],
+						"inputRegister" : [1132, 1131],
 						"type": "float"
 					},
 					{
