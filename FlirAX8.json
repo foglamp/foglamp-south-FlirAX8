@@ -763,6 +763,15 @@
 					}
 	  			]
 			}
+		},
+		"protocol" : {
+			"default" : "TCP"
+		},
+		"port" : {
+			"default" : "502"
+		},
+		"asset" : {
+			"default" : "AX8"
 		}
 	}
 }
