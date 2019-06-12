@@ -762,10 +762,12 @@
 						"inputRegister" : 1258
 					}
 	  			]
-			}
+			},
+			"readonly" : "true"
 		},
 		"protocol" : {
-			"default" : "TCP"
+			"default" : "TCP",
+			"readonly" : "true"
 		},
 		"port" : {
 			"default" : "502"
