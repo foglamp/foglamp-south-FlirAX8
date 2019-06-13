@@ -48,7 +48,7 @@
 					},
 					{
 						"name" : "min1",
-						"inputRegister" : [1022, 10121],
+						"inputRegister" : [1022, 1021],
 						"type": "float"
 					},
 					{
