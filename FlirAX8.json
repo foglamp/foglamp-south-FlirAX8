@@ -1,770 +1,779 @@
 {
-	"description": "A Modbus connected Flir AX8 infrared camera",
-	"name": "FlirAX8",
-	"connection": "ModbusC",
-	"defaults": {
-		"asset": {
-			"default": "FlirAX8"
-			},
-		"map": {
-			"default": {
-				"values": [{
-						"name": "delta1",
-						"register": [5, 6],
+	"description" : "A Modbus connected Flir AX8 thermal imaging camera",
+	"name" : "FlirAX8",
+	"connection" : "ModbusC",
+	"defaults" : {
+		"map" : {
+			"default" : {
+				"values" : [
+					{
+						"name" : "delta1",
+						"inputRegister" : [1006, 1005],
 						"type": "float"
 					},
 					{
-						"name": "delta2",
-						"register": [7, 8],
+						"name" : "delta2",
+						"inputRegister" : [1008, 1007],
 						"type": "float"
 					},
 					{
-						"name": "delta3",
-						"register": [9, 10],
+						"name" : "delta3",
+						"inputRegister" : [1010, 1009],
 						"type": "float"
 					},
 					{
-						"name": "delta4",
-						"register": [11, 12],
+						"name" : "delta4",
+						"inputRegister" : [1012, 1011],
 						"type": "float"
 					},
 					{
-						"name": "delta5",
-						"register": [13, 14],
+						"name" : "delta5",
+						"inputRegister" : [1014, 1013],
 						"type": "float"
 					},
 					{
-						"name": "delta6",
-						"register": [15, 16],
+						"name" : "delta6",
+						"inputRegister" : [1016, 1015],
 						"type": "float"
 					},
 					{
-						"name": "internal",
-						"register": [17, 18],
+						"name" : "internal",
+						"inputRegister" : [1018, 1017],
 						"type": "float"
 					},
 					{
-						"name": "spot1",
-						"register": [19, 20],
+						"name" : "spot1",
+						"inputRegister" : [1020, 1019],
 						"type": "float"
 					},
 					{
-						"name": "min1",
-						"register": [21, 22],
+						"name" : "min1",
+						"inputRegister" : [1022, 1021],
 						"type": "float"
 					},
 					{
-						"name": "max1",
-						"register": [23, 24],
+						"name" : "max1",
+						"inputRegister" : [1024, 1023],
 						"type": "float"
 					},
 					{
-						"name": "average1",
-						"register": [25, 26],
+						"name" : "average1",
+						"inputRegister" : [1026, 1025],
 						"type": "float"
 					},
 					{
-						"name": "spot1Valid",
-						"register": 27
+						"name" : "spot1Valid",
+						"inputRegister" : 1027
 					},
 					{
-						"name": "min1Valid",
-						"register": 28
+						"name" : "min1Valid",
+						"inputRegister" : 1028
 					},
 					{
-						"name": "max1Valid",
-						"register": 29
+						"name" : "max1Valid",
+						"inputRegister" : 1029
 					},
 					{
-						"name": "average1Valid",
-						"register": 30
+						"name" : "average1Valid",
+						"inputRegister" : 1030
 					},
 					{
-						"name": "spot2",
-						"register": [31, 32],
+						"name" : "spot2",
+						"inputRegister" : [1032, 1031],
 						"type": "float"
 					},
 					{
-						"name": "min2",
-						"register": [33, 34],
+						"name" : "min2",
+						"inputRegister" : [1034, 1033],
 						"type": "float"
 					},
 					{
-						"name": "max2",
-						"register": [35, 36],
+						"name" : "max2",
+						"inputRegister" : [1036, 1035],
 						"type": "float"
 					},
 					{
-						"name": "average2",
-						"register": [37, 38],
+						"name" : "average2",
+						"inputRegister" : [1038, 1037],
 						"type": "float"
 					},
 					{
-						"name": "spot2Valid",
-						"register": 39
+						"name" : "spot2Valid",
+						"inputRegister" : 1039
 					},
 					{
-						"name": "min2Valid",
-						"register": 40
+						"name" : "min2Valid",
+						"inputRegister" : 1040
 					},
 					{
-						"name": "max2Valid",
-						"register": 41
+						"name" : "max2Valid",
+						"inputRegister" : 1041
 					},
 					{
-						"name": "average2Valid",
-						"register": 42
+						"name" : "average2Valid",
+						"inputRegister" : 1042
 					},
 					{
-						"name": "spot3",
-						"register": [43, 44],
+						"name" : "spot3",
+						"inputRegister" : [1044, 1043],
 						"type": "float"
 					},
 					{
-						"name": "min3",
-						"register": [45, 46],
+						"name" : "min3",
+						"inputRegister" : [1046, 1045],
 						"type": "float"
 					},
 					{
-						"name": "max3",
-						"register": [47, 48],
+						"name" : "max3",
+						"inputRegister" : [1048, 1047],
 						"type": "float"
 					},
 					{
-						"name": "average3",
-						"register": [49, 50],
+						"name" : "average3",
+						"inputRegister" : [1050, 1049],
 						"type": "float"
 					},
 					{
-						"name": "spot3Valid",
-						"register": 51
+						"name" : "spot3Valid",
+						"inputRegister" : 1051
 					},
 					{
-						"name": "min3Valid",
-						"register": 52
+						"name" : "min3Valid",
+						"inputRegister" : 1052
 					},
 					{
-						"name": "max3Valid",
-						"register": 53
+						"name" : "max3Valid",
+						"inputRegister" : 1053
 					},
 					{
-						"name": "average3Valid",
-						"register": 54
+						"name" : "average3Valid",
+						"inputRegister" : 1054
 					},
 					{
-						"name": "spot4",
-						"register": [55, 56],
+						"name" : "spot4",
+						"inputRegister" : [1056, 1055],
 						"type": "float"
 					},
 					{
-						"name": "min4",
-						"register": [57, 58],
+						"name" : "min4",
+						"inputRegister" : [1058, 1057],
 						"type": "float"
 					},
 					{
-						"name": "max4",
-						"register": [59, 60],
+						"name" : "max4",
+						"inputRegister" : [1060, 1059],
 						"type": "float"
 					},
 					{
-						"name": "average4",
-						"register": [61, 62],
+						"name" : "average4",
+						"inputRegister" : [1062, 1061],
 						"type": "float"
 					},
 					{
-						"name": "spot4Valid",
-						"register": 63
+						"name" : "spot4Valid",
+						"inputRegister" : 1063
 					},
 					{
-						"name": "min4Valid",
-						"register": 64
+						"name" : "min4Valid",
+						"inputRegister" : 1064
 					},
 					{
-						"name": "max4Valid",
-						"register": 65
+						"name" : "max4Valid",
+						"inputRegister" : 1065
 					},
 					{
-						"name": "average4Valid",
-						"register": 66
+						"name" : "average4Valid",
+						"inputRegister" : 1066
 					},
 					{
-						"name": "spot5",
-						"register": [67, 68],
+						"name" : "spot5",
+						"inputRegister" : [1068, 1067],
 						"type": "float"
 					},
 					{
-						"name": "min5",
-						"register": [69, 70],
+						"name" : "min5",
+						"inputRegister" : [1070, 1069],
 						"type": "float"
 					},
 					{
-						"name": "max5",
-						"register": [71, 72],
+						"name" : "max5",
+						"inputRegister" : [1072, 1071],
 						"type": "float"
 					},
 					{
-						"name": "average5",
-						"register": [73, 74],
+						"name" : "average5",
+						"inputRegister" : [1074, 1073],
 						"type": "float"
 					},
 					{
-						"name": "spot5Valid",
-						"register": 75
+						"name" : "spot5Valid",
+						"inputRegister" : 1075
 					},
 					{
-						"name": "min5Valid",
-						"register": 76
+						"name" : "min5Valid",
+						"inputRegister" : 1076
 					},
 					{
-						"name": "max5Valid",
-						"register": 77
+						"name" : "max5Valid",
+						"inputRegister" : 1077
 					},
 					{
-						"name": "average5Valid",
-						"register": 78
+						"name" : "average5Valid",
+						"inputRegister" : 1078
 					},
 					{
-						"name": "spot6",
-						"register": [79, 80],
+						"name" : "spot6",
+						"inputRegister" : [1080, 1079],
 						"type": "float"
 					},
 					{
-						"name": "min6",
-						"register": [81, 82],
+						"name" : "min6",
+						"inputRegister" : [1082, 1081],
 						"type": "float"
 					},
 					{
-						"name": "max6",
-						"register": [83, 84],
+						"name" : "max6",
+						"inputRegister" : [1084, 1083],
 						"type": "float"
 					},
 					{
-						"name": "average6",
-						"register": [85, 86],
+						"name" : "average6",
+						"inputRegister" : [1086, 1085],
 						"type": "float"
 					},
 					{
-						"name": "spot6Valid",
-						"register": 87
+						"name" : "spot6Valid",
+						"inputRegister" : 1087
 					},
 					{
-						"name": "min6Valid",
-						"register": 88
+						"name" : "min6Valid",
+						"inputRegister" : 1088
 					},
 					{
-						"name": "max6Valid",
-						"register": 89
+						"name" : "max6Valid",
+						"inputRegister" : 1089
 					},
 					{
-						"name": "average6Valid",
-						"register": 90
+						"name" : "average6Valid",
+						"inputRegister" : 1090
 					},
 					{
-						"name": "spot7",
-						"register": [91, 92],
+						"name" : "spot7",
+						"inputRegister" : [1092, 1091],
 						"type": "float"
 					},
 					{
-						"name": "min7",
-						"register": [93, 94],
+						"name" : "min7",
+						"inputRegister" : [1094, 1093],
 						"type": "float"
 					},
 					{
-						"name": "max7",
-						"register": [95, 96],
+						"name" : "max7",
+						"inputRegister" : [1096, 1095],
 						"type": "float"
 					},
 					{
-						"name": "average7",
-						"register": [97, 98],
+						"name" : "average7",
+						"inputRegister" : [1098, 1097],
 						"type": "float"
 					},
 					{
-						"name": "spot7Valid",
-						"register": 99
+						"name" : "spot7Valid",
+						"inputRegister" : 1099
 					},
 					{
-						"name": "min7Valid",
-						"register": 100
+						"name" : "min7Valid",
+						"inputRegister" : 1100
 					},
 					{
-						"name": "max7Valid",
-						"register": 101
+						"name" : "max7Valid",
+						"inputRegister" : 1101
 					},
 					{
-						"name": "average7Valid",
-						"register": 102
+						"name" : "average7Valid",
+						"inputRegister" : 1102
 					},
 					{
-						"name": "spot8",
-						"register": [103, 104],
+						"name" : "spot8",
+						"inputRegister" : [1104, 1103],
 						"type": "float"
 					},
 					{
-						"name": "min8",
-						"register": [105, 106],
+						"name" : "min8",
+						"inputRegister" : [1106, 1105],
 						"type": "float"
 					},
 					{
-						"name": "max8",
-						"register": [107, 108],
+						"name" : "max8",
+						"inputRegister" : [1108, 1107],
 						"type": "float"
 					},
 					{
-						"name": "average8",
-						"register": [109, 110],
+						"name" : "average8",
+						"inputRegister" : [1110, 1109],
 						"type": "float"
 					},
 					{
-						"name": "spot8Valid",
-						"register": 111
+						"name" : "spot8Valid",
+						"inputRegister" : 1111
 					},
 					{
-						"name": "min8Valid",
-						"register": 112
+						"name" : "min8Valid",
+						"inputRegister" : 1112
 					},
 					{
-						"name": "max8Valid",
-						"register": 113
+						"name" : "max8Valid",
+						"inputRegister" : 1113 
 					},
 					{
-						"name": "average8Valid",
-						"register": 114
+						"name" : "average8Valid",
+						"inputRegister" : 1114
 					},
 					{
-						"name": "spot9",
-						"register": [115, 116],
+						"name" : "spot9",
+						"inputRegister" : [1116, 1115],
 						"type": "float"
 					},
 					{
-						"name": "min9",
-						"register": [117, 118],
+						"name" : "min9",
+						"inputRegister" : [1118, 1117],
 						"type": "float"
 					},
 					{
-						"name": "max9",
-						"register": [119, 120],
+						"name" : "max9",
+						"inputRegister" : [1120, 1119],
 						"type": "float"
 					},
 					{
-						"name": "average9",
-						"register": [121, 122],
+						"name" : "average9",
+						"inputRegister" : [1122, 1121],
 						"type": "float"
 					},
 					{
-						"name": "spot9Valid",
-						"register": 123
+						"name" : "spot9Valid",
+						"inputRegister" : 1123
 					},
 					{
-						"name": "min9Valid",
-						"register": 124
+						"name" : "min9Valid",
+						"inputRegister" : 1124
 					},
 					{
-						"name": "max9Valid",
-						"register": 125
+						"name" : "max9Valid",
+						"inputRegister" : 1125
 					},
 					{
-						"name": "average9Valid",
-						"register": 126
+						"name" : "average9Valid",
+						"inputRegister" : 1126
 					},
 					{
-						"name": "spot10",
-						"register": [127, 128],
+						"name" : "spot10",
+						"inputRegister" : [1128, 1127],
 						"type": "float"
 					},
 					{
-						"name": "min10",
-						"register": [129, 130],
+						"name" : "min10",
+						"inputRegister" : [1130, 1129],
 						"type": "float"
 					},
 					{
-						"name": "max10",
-						"register": [131, 132],
+						"name" : "max10",
+						"inputRegister" : [1132, 1131],
 						"type": "float"
 					},
 					{
-						"name": "average10",
-						"register": [133, 134],
+						"name" : "average10",
+						"inputRegister" : [1134, 1133],
 						"type": "float"
 					},
 					{
-						"name": "spot10Valid",
-						"register": 135
+						"name" : "spot10Valid",
+						"inputRegister" : 1135
 					},
 					{
-						"name": "min10Valid",
-						"register": 136
+						"name" : "min10Valid",
+						"inputRegister" : 1136
 					},
 					{
-						"name": "max10Valid",
-						"register": 137
+						"name" : "max10Valid",
+						"inputRegister" : 1137
 					},
 					{
-						"name": "average10Valid",
-						"register": 138
+						"name" : "average10Valid",
+						"inputRegister" : 1138
 					},
 					{
-						"name": "spot11",
-						"register": [139, 140],
+						"name" : "spot11",
+						"inputRegister" : [1140, 1139],
 						"type": "float"
 					},
 					{
-						"name": "min11",
-						"register": [141, 142],
+						"name" : "min11",
+						"inputRegister" : [1142, 1141],
 						"type": "float"
 					},
 					{
-						"name": "max11",
-						"register": [143, 144],
+						"name" : "max11",
+						"inputRegister" : [1144, 1143],
 						"type": "float"
 					},
 					{
-						"name": "average11",
-						"register": [145, 146],
+						"name" : "average11",
+						"inputRegister" : [1146, 1145],
 						"type": "float"
 					},
 					{
-						"name": "spot11Valid",
-						"register": 147
+						"name" : "spot11Valid",
+						"inputRegister" : 1147
 					},
 					{
-						"name": "min11Valid",
-						"register": 148
+						"name" : "min11Valid",
+						"inputRegister" : 1148
 					},
 					{
-						"name": "max11Valid",
-						"register": 149
+						"name" : "max11Valid",
+						"inputRegister" : 1149
 					},
 					{
-						"name": "average11Valid",
-						"register": 150
+						"name" : "average11Valid",
+						"inputRegister" : 1150
 					},
 					{
-						"name": "spot12",
-						"register": [151, 152],
+						"name" : "spot12",
+						"inputRegister" : [1152, 1151],
 						"type": "float"
 					},
 					{
-						"name": "min12",
-						"register": [153, 154],
+						"name" : "min12",
+						"inputRegister" : [1154, 1153],
 						"type": "float"
 					},
 					{
-						"name": "max12",
-						"register": [155, 156],
+						"name" : "max12",
+						"inputRegister" : [1156, 1155],
 						"type": "float"
 					},
 					{
-						"name": "average12",
-						"register": [157, 158],
+						"name" : "average12",
+						"inputRegister" : [1158, 1157],
 						"type": "float"
 					},
 					{
-						"name": "spot12Valid",
-						"register": 159
+						"name" : "spot12Valid",
+						"inputRegister" : 1159
 					},
 					{
-						"name": "min12Valid",
-						"register": 160
+						"name" : "min12Valid",
+						"inputRegister" : 1160
 					},
 					{
-						"name": "max12Valid",
-						"register": 161
+						"name" : "max12Valid",
+						"inputRegister" : 1161
 					},
 					{
-						"name": "average12Valid",
-						"register": 162
+						"name" : "average12Valid",
+						"inputRegister" : 1162
 					},
 					{
-						"name": "spot13",
-						"register": [163, 164],
+						"name" : "spot13",
+						"inputRegister" : [1164, 1163],
 						"type": "float"
 					},
 					{
-						"name": "min13",
-						"register": [165, 166],
+						"name" : "min13",
+						"inputRegister" : [1166, 1165],
 						"type": "float"
 					},
 					{
-						"name": "max13",
-						"register": [167, 168],
+						"name" : "max13",
+						"inputRegister" : [1168, 1167],
 						"type": "float"
 					},
 					{
-						"name": "average13",
-						"register": [169, 170],
+						"name" : "average13",
+						"inputRegister" : [1170, 1169],
 						"type": "float"
 					},
 					{
-						"name": "spot13Valid",
-						"register": 171
+						"name" : "spot13Valid",
+						"inputRegister" : 1171
 					},
 					{
-						"name": "min13Valid",
-						"register": 172
+						"name" : "min13Valid",
+						"inputRegister" : 1172
 					},
 					{
-						"name": "max13Valid",
-						"register": 173
+						"name" : "max13Valid",
+						"inputRegister" : 1173
 					},
 					{
-						"name": "average13Valid",
-						"register": 174
+						"name" : "average13Valid",
+						"inputRegister" : 1174
 					},
 					{
-						"name": "spot14",
-						"register": [175, 176],
+						"name" : "spot14",
+						"inputRegister" : [1176, 1175],
 						"type": "float"
 					},
 					{
-						"name": "min14",
-						"register": [177, 178],
+						"name" : "min14",
+						"inputRegister" : [1178, 1177],
 						"type": "float"
 					},
 					{
-						"name": "max14",
-						"register": [179, 180],
+						"name" : "max14",
+						"inputRegister" : [1180, 1179],
 						"type": "float"
 					},
 					{
-						"name": "average14",
-						"register": [181, 182],
+						"name" : "average14",
+						"inputRegister" : [1182, 1181],
 						"type": "float"
 					},
 					{
-						"name": "spot14Valid",
-						"register": 183
+						"name" : "spot14Valid",
+						"inputRegister" : 1183
 					},
 					{
-						"name": "min14Valid",
-						"register": 184
+						"name" : "min14Valid",
+						"inputRegister" : 1184
 					},
 					{
-						"name": "max14Valid",
-						"register": 185
+						"name" : "max14Valid",
+						"inputRegister" : 1185
 					},
 					{
-						"name": "average14Valid",
-						"register": 186
+						"name" : "average14Valid",
+						"inputRegister" : 1186
 					},
 					{
-						"name": "spot15",
-						"register": [187, 188],
+						"name" : "spot15",
+						"inputRegister" : [1188, 1187],
 						"type": "float"
 					},
 					{
-						"name": "min15",
-						"register": [189, 190],
+						"name" : "min15",
+						"inputRegister" : [1190, 1189],
 						"type": "float"
 					},
 					{
-						"name": "max15",
-						"register": [191, 192],
+						"name" : "max15",
+						"inputRegister" : [1192, 1191],
 						"type": "float"
 					},
 					{
-						"name": "average15",
-						"register": [193, 194],
+						"name" : "average15",
+						"inputRegister" : [1194, 1193],
 						"type": "float"
 					},
 					{
-						"name": "spot15Valid",
-						"register": 195
+						"name" : "spot15Valid",
+						"inputRegister" : 1195
 					},
 					{
-						"name": "min15Valid",
-						"register": 196
+						"name" : "min15Valid",
+						"inputRegister" : 1196
 					},
 					{
-						"name": "max15Valid",
-						"register": 197
+						"name" : "max15Valid",
+						"inputRegister" : 1197
 					},
 					{
-						"name": "average15Valid",
-						"register": 198
+						"name" : "average15Valid",
+						"inputRegister" : 1198
 					},
 					{
-						"name": "spot16",
-						"register": [199, 200],
+						"name" : "spot16",
+						"inputRegister" : [1200, 1199],
 						"type": "float"
 					},
 					{
-						"name": "min16",
-						"register": [201, 202],
+						"name" : "min16",
+						"inputRegister" : [1202, 1201],
 						"type": "float"
 					},
 					{
-						"name": "max16",
-						"register": [203, 204],
+						"name" : "max16",
+						"inputRegister" : [1204, 1203],
 						"type": "float"
 					},
 					{
-						"name": "average16",
-						"register": [205, 206],
+						"name" : "average16",
+						"inputRegister" : [1206, 1205],
 						"type": "float"
 					},
 					{
-						"name": "spot16Valid",
-						"register": 207
+						"name" : "spot16Valid",
+						"inputRegister" : 1207
 					},
 					{
-						"name": "min16Valid",
-						"register": 208
+						"name" : "min16Valid",
+						"inputRegister" : 1208
 					},
 					{
-						"name": "max16Valid",
-						"register": 209
+						"name" : "max16Valid",
+						"inputRegister" : 1209
 					},
 					{
-						"name": "average16Valid",
-						"register": 210
+						"name" : "average16Valid",
+						"inputRegister" : 1210
 					},
 					{
-						"name": "spot17",
-						"register": [211, 212],
+						"name" : "spot17",
+						"inputRegister" : [1212, 1211],
 						"type": "float"
 					},
 					{
-						"name": "min17",
-						"register": [213, 214],
+						"name" : "min17",
+						"inputRegister" : [1214, 1213],
 						"type": "float"
 					},
 					{
-						"name": "max17",
-						"register": [215, 216],
+						"name" : "max17",
+						"inputRegister" : [1216, 1215],
 						"type": "float"
 					},
 					{
-						"name": "average17",
-						"register": [217, 218],
+						"name" : "average17",
+						"inputRegister" : [1218, 1217],
 						"type": "float"
 					},
 					{
-						"name": "spot17Valid",
-						"register": 219
+						"name" : "spot17Valid",
+						"inputRegister" : 1219
 					},
 					{
-						"name": "min17Valid",
-						"register": 220
+						"name" : "min17Valid",
+						"inputRegister" : 1220
 					},
 					{
-						"name": "max17Valid",
-						"register": 221
+						"name" : "max17Valid",
+						"inputRegister" : 1221
 					},
 					{
-						"name": "average17Valid",
-						"register": 222
+						"name" : "average17Valid",
+						"inputRegister" : 1222
 					},
 					{
-						"name": "spot18",
-						"register": [223, 224],
+						"name" : "spot18",
+						"inputRegister" : [1224, 1223],
 						"type": "float"
 					},
 					{
-						"name": "min18",
-						"register": [225, 226],
+						"name" : "min18",
+						"inputRegister" : [1226, 1225],
 						"type": "float"
 					},
 					{
-						"name": "max18",
-						"register": [227, 228],
+						"name" : "max18",
+						"inputRegister" : [1228, 1227],
 						"type": "float"
 					},
 					{
-						"name": "average18",
-						"register": [229, 230],
+						"name" : "average18",
+						"inputRegister" : [1230, 1229],
 						"type": "float"
 					},
 					{
-						"name": "spot18Valid",
-						"register": 231
+						"name" : "spot18Valid",
+						"inputRegister" : 1231
 					},
 					{
-						"name": "min18Valid",
-						"register": 232
+						"name" : "min18Valid",
+						"inputRegister" : 1232
 					},
 					{
-						"name": "max18Valid",
-						"register": 233
+						"name" : "max18Valid",
+						"inputRegister" : 1233
 					},
 					{
-						"name": "average18Valid",
-						"register": 234
+						"name" : "average18Valid",
+						"inputRegister" : 1234
 					},
 					{
-						"name": "spot19",
-						"register": [235, 236],
+						"name" : "spot19",
+						"inputRegister" : [1236, 1235],
 						"type": "float"
 					},
 					{
-						"name": "min19",
-						"register": [237, 238],
+						"name" : "min19",
+						"inputRegister" : [1238, 1237],
 						"type": "float"
 					},
 					{
-						"name": "max19",
-						"register": [239, 240],
+						"name" : "max19",
+						"inputRegister" : [1240, 1239],
 						"type": "float"
 					},
 					{
-						"name": "average19",
-						"register": [241, 242],
+						"name" : "average19",
+						"inputRegister" : [1242, 1241],
 						"type": "float"
 					},
 					{
-						"name": "spot19Valid",
-						"register": 243
+						"name" : "spot19Valid",
+						"inputRegister" : 1243
 					},
 					{
-						"name": "min19Valid",
-						"register": 244
+						"name" : "min19Valid",
+						"inputRegister" : 1244
 					},
 					{
-						"name": "max19Valid",
-						"register": 245
+						"name" : "max19Valid",
+						"inputRegister" : 1245
 					},
 					{
-						"name": "average19Valid",
-						"register": 246
+						"name" : "average19Valid",
+						"inputRegister" : 1246
 					},
 					{
-						"name": "spot20",
-						"register": [247, 248],
+						"name" : "spot20",
+						"inputRegister" : [1248, 1247],
 						"type": "float"
 					},
 					{
-						"name": "min20",
-						"register": [249, 250],
+						"name" : "min20",
+						"inputRegister" : [1250, 1249],
 						"type": "float"
 					},
 					{
-						"name": "max20",
-						"register": [251, 252],
+						"name" : "max20",
+						"inputRegister" : [1252, 1251],
 						"type": "float"
 					},
 					{
-						"name": "average20",
-						"register": [253, 254],
+						"name" : "average20",
+						"inputRegister" : [1254, 1253],
 						"type": "float"
 					},
 					{
-						"name": "spot20Valid",
-						"register": 255
+						"name" : "spot20Valid",
+						"inputRegister" : 1255
 					},
 					{
-						"name": "min20Valid",
-						"register": 256
+						"name" : "min20Valid",
+						"inputRegister" : 1256
 					},
 					{
-						"name": "max20Valid",
-						"register": 257
+						"name" : "max20Valid",
+						"inputRegister" : 1257
 					},
 					{
-						"name": "average20Valid",
-						"register": 258
+						"name" : "average20Valid",
+						"inputRegister" : 1258
 					}
-				]
-			}
+	  			]
+			},
+			"readonly" : "true"
+		},
+		"protocol" : {
+			"default" : "TCP",
+			"readonly" : "true"
+		},
+		"port" : {
+			"default" : "502"
+		},
+		"asset" : {
+			"default" : "AX8"
 		}
 	}
 }
