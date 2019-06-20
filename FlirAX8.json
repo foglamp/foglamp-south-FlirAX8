@@ -774,6 +774,21 @@
 		},
 		"asset" : {
 			"default" : "AX8"
+		},
+		"baud" : {
+			"readonly" : "true"
+		},
+		"device" : {
+			"readonly" : "true"
+		},
+		"stopbits" : {
+			"readonly" : "true"
+		},
+		"parity" : {
+			"readonly" : "true"
+		},
+		"bits" : {
+			"readonly" : "true"
 		}
 	}
 }
