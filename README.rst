@@ -11,7 +11,7 @@ Description
 -----------
 
 This plugin supports FlirAX8 device connected via modbus interface. It internally
-uses foglamp-south-modbusc plugin and Linux libmodbus library.
+uses foglamp-south-modbus plugin and Linux libmodbus library.
 
 
 Build
