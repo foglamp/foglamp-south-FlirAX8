@@ -11,7 +11,7 @@ Description
 -----------
 
 This plugin supports FlirAX8 device connected via modbus interface. It internally
-uses foglamp-south-modbus plugin and Linux libmodbus library.
+uses fledge-south-modbus plugin and Linux libmodbus library.
 
 
 Build
@@ -29,10 +29,10 @@ To build FlirAX8 modbus plugin run the commands:
 You may also pass following option to cmake to override 
 the default behaviour:
 
-- **FOGLAMP_INSTALL** sets the installation path of this plugin
+- **FLEDGE_INSTALL** sets the installation path of this plugin
 
 NOTE:
- - 'make install' target is defined only when **FOGLAMP_INSTALL** is set
+ - 'make install' target is defined only when **FLEDGE_INSTALL** is set
 
 Examples:
 
@@ -40,14 +40,14 @@ Examples:
 
   $ cmake ..
 
-- no options and FOGLAMP_ROOT set
+- no options and FLEDGE_ROOT set
 
-  $ export FOGLAMP_ROOT=/some_foglamp_setup
+  $ export FLEDGE_ROOT=/some_fledge_setup
 
   $ cmake ..
 
-- set FOGLAMP_INSTALL
+- set FLEDGE_INSTALL
 
-  $ cmake -DFOGLAMP_INSTALL=/home/source/develop/FogLAMP
+  $ cmake -DFLEDGE_INSTALL=/home/source/develop/Fledge
 
-  $ cmake -DFOGLAMP_INSTALL=/usr/local/foglamp
+  $ cmake -DFLEDGE_INSTALL=/usr/local/fledge
