@@ -1,0 +1,434 @@
+{
+	"description" : "A Modbus connected Flir AX8 thermal imaging camera",
+	"name" : "FlirAX8",
+	"connection" : "ModbusC",
+	"defaults" : {
+		"map" : {
+			"default" : {
+				"values" : [
+					{
+						"name" : "delta1",
+						"inputRegister" : [1006, 1005],
+						"type": "float"
+					},
+					{
+						"name" : "delta2",
+						"inputRegister" : [1008, 1007],
+						"type": "float"
+					},
+					{
+						"name" : "delta3",
+						"inputRegister" : [1010, 1009],
+						"type": "float"
+					},
+					{
+						"name" : "delta4",
+						"inputRegister" : [1012, 1011],
+						"type": "float"
+					},
+					{
+						"name" : "delta5",
+						"inputRegister" : [1014, 1013],
+						"type": "float"
+					},
+					{
+						"name" : "delta6",
+						"inputRegister" : [1016, 1015],
+						"type": "float"
+					},
+					{
+						"name" : "internal",
+						"inputRegister" : [1018, 1017],
+						"type": "float"
+					},
+					{
+						"name" : "spot1",
+						"inputRegister" : [1020, 1019],
+						"type": "float"
+					},
+					{
+						"name" : "min1",
+						"inputRegister" : [1022, 1021],
+						"type": "float"
+					},
+					{
+						"name" : "max1",
+						"inputRegister" : [1024, 1023],
+						"type": "float"
+					},
+					{
+						"name" : "average1",
+						"inputRegister" : [1026, 1025],
+						"type": "float"
+					},
+					{
+						"name" : "spot1Valid",
+						"inputRegister" : 1027
+					},
+					{
+						"name" : "min1Valid",
+						"inputRegister" : 1028
+					},
+					{
+						"name" : "max1Valid",
+						"inputRegister" : 1029
+					},
+					{
+						"name" : "average1Valid",
+						"inputRegister" : 1030
+					},
+					{
+						"name" : "spot2",
+						"inputRegister" : [1032, 1031],
+						"type": "float"
+					},
+					{
+						"name" : "min2",
+						"inputRegister" : [1034, 1033],
+						"type": "float"
+					},
+					{
+						"name" : "max2",
+						"inputRegister" : [1036, 1035],
+						"type": "float"
+					},
+					{
+						"name" : "average2",
+						"inputRegister" : [1038, 1037],
+						"type": "float"
+					},
+					{
+						"name" : "spot2Valid",
+						"inputRegister" : 1039
+					},
+					{
+						"name" : "min2Valid",
+						"inputRegister" : 1040
+					},
+					{
+						"name" : "max2Valid",
+						"inputRegister" : 1041
+					},
+					{
+						"name" : "average2Valid",
+						"inputRegister" : 1042
+					},
+					{
+						"name" : "spot3",
+						"inputRegister" : [1044, 1043],
+						"type": "float"
+					},
+					{
+						"name" : "min3",
+						"inputRegister" : [1046, 1045],
+						"type": "float"
+					},
+					{
+						"name" : "max3",
+						"inputRegister" : [1048, 1047],
+						"type": "float"
+					},
+					{
+						"name" : "average3",
+						"inputRegister" : [1050, 1049],
+						"type": "float"
+					},
+					{
+						"name" : "spot3Valid",
+						"inputRegister" : 1051
+					},
+					{
+						"name" : "min3Valid",
+						"inputRegister" : 1052
+					},
+					{
+						"name" : "max3Valid",
+						"inputRegister" : 1053
+					},
+					{
+						"name" : "average3Valid",
+						"inputRegister" : 1054
+					},
+					{
+						"name" : "spot4",
+						"inputRegister" : [1056, 1055],
+						"type": "float"
+					},
+					{
+						"name" : "min4",
+						"inputRegister" : [1058, 1057],
+						"type": "float"
+					},
+					{
+						"name" : "max4",
+						"inputRegister" : [1060, 1059],
+						"type": "float"
+					},
+					{
+						"name" : "average4",
+						"inputRegister" : [1062, 1061],
+						"type": "float"
+					},
+					{
+						"name" : "spot4Valid",
+						"inputRegister" : 1063
+					},
+					{
+						"name" : "min4Valid",
+						"inputRegister" : 1064
+					},
+					{
+						"name" : "max4Valid",
+						"inputRegister" : 1065
+					},
+					{
+						"name" : "average4Valid",
+						"inputRegister" : 1066
+					},
+					{
+						"name" : "spot5",
+						"inputRegister" : [1068, 1067],
+						"type": "float"
+					},
+					{
+						"name" : "min5",
+						"inputRegister" : [1070, 1069],
+						"type": "float"
+					},
+					{
+						"name" : "max5",
+						"inputRegister" : [1072, 1071],
+						"type": "float"
+					},
+					{
+						"name" : "average5",
+						"inputRegister" : [1074, 1073],
+						"type": "float"
+					},
+					{
+						"name" : "spot5Valid",
+						"inputRegister" : 1075
+					},
+					{
+						"name" : "min5Valid",
+						"inputRegister" : 1076
+					},
+					{
+						"name" : "max5Valid",
+						"inputRegister" : 1077
+					},
+					{
+						"name" : "average5Valid",
+						"inputRegister" : 1078
+					},
+					{
+						"name" : "spot6",
+						"inputRegister" : [1080, 1079],
+						"type": "float"
+					},
+					{
+						"name" : "min6",
+						"inputRegister" : [1082, 1081],
+						"type": "float"
+					},
+					{
+						"name" : "max6",
+						"inputRegister" : [1084, 1083],
+						"type": "float"
+					},
+					{
+						"name" : "average6",
+						"inputRegister" : [1086, 1085],
+						"type": "float"
+					},
+					{
+						"name" : "spot6Valid",
+						"inputRegister" : 1087
+					},
+					{
+						"name" : "min6Valid",
+						"inputRegister" : 1088
+					},
+					{
+						"name" : "max6Valid",
+						"inputRegister" : 1089
+					},
+					{
+						"name" : "average6Valid",
+						"inputRegister" : 1090
+					},
+					{
+						"name" : "spot7",
+						"inputRegister" : [1092, 1091],
+						"type": "float"
+					},
+					{
+						"name" : "min7",
+						"inputRegister" : [1094, 1093],
+						"type": "float"
+					},
+					{
+						"name" : "max7",
+						"inputRegister" : [1096, 1095],
+						"type": "float"
+					},
+					{
+						"name" : "average7",
+						"inputRegister" : [1098, 1097],
+						"type": "float"
+					},
+					{
+						"name" : "spot7Valid",
+						"inputRegister" : 1099
+					},
+					{
+						"name" : "min7Valid",
+						"inputRegister" : 1100
+					},
+					{
+						"name" : "max7Valid",
+						"inputRegister" : 1101
+					},
+					{
+						"name" : "average7Valid",
+						"inputRegister" : 1102
+					},
+					{
+						"name" : "spot8",
+						"inputRegister" : [1104, 1103],
+						"type": "float"
+					},
+					{
+						"name" : "min8",
+						"inputRegister" : [1106, 1105],
+						"type": "float"
+					},
+					{
+						"name" : "max8",
+						"inputRegister" : [1108, 1107],
+						"type": "float"
+					},
+					{
+						"name" : "average8",
+						"inputRegister" : [1110, 1109],
+						"type": "float"
+					},
+					{
+						"name" : "spot8Valid",
+						"inputRegister" : 1111
+					},
+					{
+						"name" : "min8Valid",
+						"inputRegister" : 1112
+					},
+					{
+						"name" : "max8Valid",
+						"inputRegister" : 1113 
+					},
+					{
+						"name" : "average8Valid",
+						"inputRegister" : 1114
+					},
+					{
+						"name" : "spot9",
+						"inputRegister" : [1116, 1115],
+						"type": "float"
+					},
+					{
+						"name" : "min9",
+						"inputRegister" : [1118, 1117],
+						"type": "float"
+					},
+					{
+						"name" : "max9",
+						"inputRegister" : [1120, 1119],
+						"type": "float"
+					},
+					{
+						"name" : "average9",
+						"inputRegister" : [1122, 1121],
+						"type": "float"
+					},
+					{
+						"name" : "spot9Valid",
+						"inputRegister" : 1123
+					},
+					{
+						"name" : "min9Valid",
+						"inputRegister" : 1124
+					},
+					{
+						"name" : "max9Valid",
+						"inputRegister" : 1125
+					},
+					{
+						"name" : "average9Valid",
+						"inputRegister" : 1126
+					},
+					{
+						"name" : "spot10",
+						"inputRegister" : [1128, 1127],
+						"type": "float"
+					},
+					{
+						"name" : "min10",
+						"inputRegister" : [1130, 1129],
+						"type": "float"
+					},
+					{
+						"name" : "max10",
+						"inputRegister" : [1132, 1131],
+						"type": "float"
+					},
+					{
+						"name" : "average10",
+						"inputRegister" : [1134, 1133],
+						"type": "float"
+					},
+					{
+						"name" : "spot10Valid",
+						"inputRegister" : 1135
+					},
+					{
+						"name" : "min10Valid",
+						"inputRegister" : 1136
+					},
+					{
+						"name" : "max10Valid",
+						"inputRegister" : 1137
+					},
+					{
+						"name" : "average10Valid",
+						"inputRegister" : 1138
+					}
+	  			]
+			},
+			"readonly" : "true"
+		},
+		"protocol" : {
+			"default" : "TCP",
+			"readonly" : "true"
+		},
+		"port" : {
+			"default" : "502"
+		},
+		"asset" : {
+			"default" : "AX8"
+		},
+		"baud" : {
+			"readonly" : "true"
+		},
+		"device" : {
+			"readonly" : "true"
+		},
+		"stopbits" : {
+			"readonly" : "true"
+		},
+		"parity" : {
+			"readonly" : "true"
+		},
+		"bits" : {
+			"readonly" : "true"
+		}
+	}
+}
